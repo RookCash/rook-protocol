@@ -1,0 +1,9 @@
+{
+  "name": "rook-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "gates": "node gates.js",
+    "gates:dist": "node gates.js dist"
+  }
+}

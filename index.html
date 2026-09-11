@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rook — Compute routed, not promised</title>
+  <meta name="description" content="Rook is a compute marketplace on Robinhood Chain. Buy verified inference or put an idle GPU to work, settled by $ROOK." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="ca-bar" data-ca-slot>
+    <span class="ca-bar-label">$ROOK CONTRACT</span>
+    <span class="ca-bar-value" data-ca-value>—</span>
+    <span class="ca-bar-status" data-ca-status>—</span>
+    <button type="button" class="ca-bar-copy" data-ca-copy>Copy</button>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="site-header-inner">
+      <a class="brand" href="#top">
+        <img class="brand-mark" src="assets/rook-mark-128.png" alt="" width="32" height="32" />
+        <span class="brand-word">Rook</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" data-nav-menu data-open="false" aria-label="Primary">
+        <a href="#how-it-works">How it works</a>
+        <a href="#register">Register</a>
+        <a href="#check">Check the contract</a>
+      </nav>
+
+      <div class="social-row">
+        <a class="social-icon" data-social="x" href="#" rel="noreferrer noopener" target="_blank" aria-label="Rook on X">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+        </a>
+        <a class="social-icon" data-social="github" href="#" rel="noreferrer noopener" target="_blank" aria-label="Rook on GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Robinhood Chain · $ROOK</p>
+        <h1>Compute routed,<br />not promised.</h1>
+        <p class="hero-lede">
+          Rook is a marketplace for verified AI inference. Renters buy metered access to a model
+          catalog; GPU owners list idle capacity and get paid when a request actually lands on it.
+          Every route is logged before it's billed.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#check">Check the contract</a>
+          <a class="btn btn-outline" href="https://github.com/RookCash/rook-protocol" data-social="github" target="_blank" rel="noreferrer noopener">Read the source</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <h2>Three moving parts</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-index">01</span>
+          <h3>Renters send a job</h3>
+          <p>A request names a model and a budget. Rook's router picks a live GPU that can serve it inside that budget, not the first one that answers.</p>
+        </article>
+        <article class="card">
+          <span class="card-index">02</span>
+          <h3>Owners list a card</h3>
+          <p>Anyone with an idle GPU can register it against the catalog. It earns when it serves a verified job, nothing when it sits idle.</p>
+        </article>
+        <article class="card">
+          <span class="card-index">03</span>
+          <h3>$ROOK settles the route</h3>
+          <p>Each completed job is a settled transaction on Robinhood Chain — the renter pays, the GPU owner is paid, and the route is on record.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="register-section" id="register">
+      <h2>What's actually confirmed</h2>
+      <p class="register-intro">
+        Every claim on this page traces back to one record below. A record marked
+        <span class="registry-badge" data-status="absent">absent</span> or
+        <span class="registry-badge" data-status="unconfirmed">unconfirmed</span>
+        stays inert until it changes — we don't dress up a placeholder as a fact.
+        <span data-registry-count>0</span> records tracked.
+      </p>
+      <ul class="registry-list" data-registry-list></ul>
+    </section>
+
+    <section class="ca-check" id="check">
+      <h2>Check a contract address</h2>
+      <p>Paste anything you've been sent. We compare it to the register above, not to whether it looks like an address.</p>
+      <form class="ca-gate-form" data-ca-gate-form>
+        <label class="sr-only" for="ca-gate-input">Address to check</label>
+        <input id="ca-gate-input" data-ca-gate-input type="text" placeholder="Paste an address to check it against the register" autocomplete="off" spellcheck="false" />
+        <button type="submit" class="btn btn-primary">Check</button>
+      </form>
+      <p class="ca-gate-result" data-ca-gate-result role="status"></p>
+    </section>
+
+    <section class="cta">
+      <img class="cta-mark" src="assets/rook-mark-128.png" alt="" width="48" height="48" />
+      <h2>Bring a GPU or bring a job.</h2>
+      <p>The catalog and the router are the whole product right now. There is no dashboard promising a future one.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#register">See what's confirmed</a>
+        <a class="btn btn-outline" href="https://github.com/RookCash/rook-protocol" data-social="github" target="_blank" rel="noreferrer noopener">Browse the repo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="brand-mark" src="assets/rook-mark-128.png" alt="" width="28" height="28" />
+        <span class="brand-word">Rook</span>
+        <p>A compute marketplace on Robinhood Chain.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="#how-it-works">How it works</a>
+        <a href="#register">Register</a>
+        <a href="#check">Check the contract</a>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <a class="social-link" data-social="x" href="#" target="_blank" rel="noreferrer noopener">X</a>
+        <a class="social-link" data-social="github" href="#" target="_blank" rel="noreferrer noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Robinhood Chain · id 4663 (0x1237)</span>
+      <span>© 2026 Rook</span>
+    </div>
+  </footer>
+
+  <script src="js/register.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/*
+  Palette provenance: k-means (k=5) over opaque pixels of
+  brand/LOGO ROOK PNG...png (2000x2000, TruecolorAlpha, 14.6% semi-alpha
+  edge pixels, 0 premultiplication risk — transparent pixels carry RGB
+  0,0,0, no fringe correction needed).
+  Cluster centers snapped to nearest exact source-pixel coordinate.
+*/
+:root {
+  /* --forest: cluster #072d20, 86.2% of brand/LOGO ROOK PNG.png opaque pixels, sampled at px(140,1620) */
+  --forest: #072d20;
+  /* --forest-deep: multiply-darkened from --forest for layered panels, not sampled */
+  --forest-deep: #04170f;
+  /* --rook-red: cluster #b63d28, 7.2% of brand/LOGO ROOK PNG.png opaque pixels, sampled at px(960,1500) */
+  --rook-red: #b63d28;
+  /* --rook-red-deep: cluster #b73c27, 51.1% of brand/LOGO ROOK PNG...png opaque pixels, sampled at px(970,1480) */
+  --rook-red-deep: #b73c27;
+  /* --cream: cluster #e8ddcb, 6.4% of brand/LOGO ROOK PNG.png opaque pixels, sampled at px(960,500) */
+  --cream: #e8ddcb;
+  /* --cream-bright: cluster #e9decc, 43.8% of brand/LOGO ROOK PNG...png opaque pixels, sampled at px(940,480) */
+  --cream-bright: #e9decc;
+  /* --sage: cluster #445b41, 9.2% of reference/SAMPUL ROOK JPG.jpg.jpeg opaque pixels, sampled at px(420,410) */
+  --sage: #445b41;
+  /* --sage-light: cluster #9da482, 7.2% of reference/SAMPUL ROOK JPG.jpg.jpeg opaque pixels, sampled at px(260,430) */
+  --sage-light: #9da482;
+
+  --ink: var(--forest-deep);
+  --paper: var(--cream);
+  --paper-bright: var(--cream-bright);
+  --line: #2a4f40;
+  --line-light: #cfc2a8;
+  --muted: #7c8b80;
+  --accent: var(--rook-red);
+  --accent-deep: var(--rook-red-deep);
+
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-body: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* spacing scale, 4px base */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* radius scale, matched to reference cut-corner treatment */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-cut: 12px 12px 12px 3px;
+
+  --control-height: 44px;
+
+  /* easing/timing measured from reference site's shipped CSS */
+  --ease-out: cubic-bezier(.16,1,.3,1);
+  --t-fast: .16s;
+  --t-med: .2s;
+
+  --shadow-card: 0 7px 18px rgba(4, 15, 10, .35);
+  --shadow-card-hover: 0 10px 23px rgba(4, 15, 10, .45);
+}
